@@ -1,0 +1,31 @@
+.customNodeWrapper {
+  position: relative;
+  min-width: 80px;
+  min-height: 24px;
+  display: flex;
+  justify-content: center;
+  animation: 0.5s NodeAppear ease-in-out;
+  &:hover {
+    .nodeAddonBtn {
+      display: block;
+    }
+  }
+  .nodeAddonBtn {
+    position: absolute;
+    margin: auto;
+    z-index: 999;
+    display: none;
+  }
+  .hidden {
+    visibility: hidden;
+  }
+}
+
+@keyframes NodeAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
